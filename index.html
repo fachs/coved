@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CovEd</title>
+    <link rel="icon" href="/src/img/coved_logo.jpg">
+    <link rel="stylesheet" href="/src/styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- Compiled and minified CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <!-- <nav class="nav-wrapper sticky" id="navbar">
+        <a href="#" class="brand-logo">CovEd</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="badges.html">Statistik</a></li>
+            <li><a href="collapsible.html">Donasi</a></li>
+            <li><a href="collapsible.html">Hubungi Kami</a></li>
+        </ul>
+    </nav> -->
+    
+    <nav id="navbar" class="nav-wrapper">
+        <a class="navbar-brand" href="#">
+            <img src="/src/img/coved_logo.jpg" alt="" width="60" height="80">
+          </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down" >
+            <li><a href="#statistik">Statistik</a></li>
+            <li><a href="collapsible.html">Donasi</a></li>
+            <li><a href="collapsible.html">Hubungi Kami</a></li>
+        </ul>
+      </nav>
+      
+    <div class="container">
+        <div class="row main-section mt-5" id="statistik">
+            <div class="col-8 mt-4">
+                <h4>MAIN SECTION COVID CASES</h4> 
+            </div>
+        </div>
+        <div class="row main-section-detail">
+            <div class="col mt-5 msd">
+              <h5>Kasus Aktif</h5>
+            </div>
+            <div class="col mt-5 msd">
+              <h5>Sembuh</h5>
+            </div>
+            <div class="col mt-5 msd">
+              <h5>Meninggal</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div data-aos="fade-right" data-aos-duration="3000" class="col-8 mt-5 main-art">
+                <h4>Apa itu COVID-19 ?</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae suscipit, unde repellendus sapiente quod ducimus veniam rerum, nisi, quas odio nesciunt hic cupiditate numquam. Nihil quisquam totam explicabo iure nobis!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae suscipit, unde repellendus sapiente quod ducimus veniam rerum, nisi, quas odio nesciunt hic cupiditate numquam. Nihil quisquam totam explicabo iure nobis!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div data-aos="fade-left" data-aos-duration="3000" class="col-8 mt-5 main-art ma-right">
+                <h4>Bagaimana gejalanya ?</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae suscipit, unde repellendus sapiente quod ducimus veniam rerum, nisi, quas odio nesciunt hic cupiditate numquam. Nihil quisquam totam explicabo iure nobis!</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="page-footer transparent">
+        <div class="container" data-aos="fade-up" data-aos-duration="3000">
+            <div class="row">
+              <div class="col l4 16 s12 footer-cc p-lg-4">
+                <h5 class="white-text">Call Center COVID-19</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Rumah Sakit 1 - 02102013192</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Rumah Sakit 2- 02102055592</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">SATGAS COVID-19 - 0210543192</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Rumah Sakit 3 - 0216613192</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2020 Covid Education for Indonesia
+          </div>
+        </div>
+      </footer>
+          
+<!-- Compiled and minified JavaScript -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+
+    window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("navbar").style.padding = "0px 0px";
+        document.getElementById("navbar").style.backgroundColor = "rgba(0,0,0,.5)";
+
+    } else {
+        // document.getElementById("navbar").style.padding = "10px 0px";
+        // document.getElementById("navbar").style.height = "10px 0px";
+        document.getElementById("navbar").style.backgroundColor = "transparent";
+
+    }
+} 
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
