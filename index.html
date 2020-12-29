@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CovEd</title>
-    <link rel="icon" href="./src/img/coved_logo.jpg">
-    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="icon" href="/src/img/coved_logo.jpg">
+    <link rel="stylesheet" href="/src/styles/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <!-- Compiled and minified CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -16,22 +16,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 <body>   
-        <nav id="navbar" class="nav-wrapper">
+    <nav id="navbar" class="nav-wrapper">
         <a class="navbar-brand" href="#">
-            <img src="./src/img/coved_logo.jpg" alt="" width="60" height="80">
+            <img src="/src/img/coved_logo.jpg" alt="" width="60" height="80">
           </a>
         <ul id="nav-mobile" class="right hide-on-med-and-down" >
-            <li><a href="Statistik.html">Statistik</a></li>
+            <!-- <li><a href="Statistik.html">Statistik</a></li> -->
             <li><a href="https://lawancorona.kitabisa.com/">Donasi</a></li>
             <li><a href="#">Hubungi Kami</a></li>
         </ul>
       </nav>
-      
-      
+    
     <div class="container main-con">
+        <div class="row atas">
+          <h1 class="ml4">
+            <span class="letters letters-1">Halo</span>
+            <span class="letters letters-2">Selamat Datang!</span>
+          </h1>
+          <div data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="10000" class="col-8 mt-5 bantext main-art">
+          <h3 class="animate__animated animate__rotateIn">CovEd, Edukasi Covid-19 Semua Usia</h3>
+        </div>
+        </div>
         <div class="row main-section-detail">
-          <h5 class="mt-4">Jumlah Kasus di Indonesia Saat Ini</h5>
-            <div class="col msd">
+          <!-- <h5 class="mt-4">Jumlah Kasus di Indonesia Saat Ini</h5> -->
+            <!-- <div class="col msd">
               <h4 style="color: #f5a623; font-weight: bold;  font-family: 'IBM Plex Mono'; ">107789</h4>
               <span>Dalam Perawatan</span>
             </div>
@@ -47,24 +57,60 @@
               <span>Pembaruan Terakhir
 
                 28 Desember 2020 15:43:47 +07:00</span>
+            </div> -->
+            <div class="col col-tableu">
+              <div class='tableauPlaceholder' id='viz1609199944061' style='position: relative'>
+                <noscript>
+                  <a href='https:&#47;&#47;data.kemkes.go.id&#47;covid19&#47;index.html'>
+                    <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;Covid-19IndonesiaByProvince&#47;DashboardUtama&#47;1_rss.png' style='border: none' />
+                  </a>
+                </noscript>
+                <object class='tableauViz'  style='display:none;'>
+                  <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                  <param name='embed_code_version' value='3' /> 
+                  <param name='site_root' value='' />
+                  <param name='name' value='Covid-19IndonesiaByProvince&#47;DashboardUtama' />
+                  <param name='tabs' value='no' />
+                  <param name='toolbar' value='no' />
+                  <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;Covid-19IndonesiaByProvince&#47;DashboardUtama&#47;1.png' /> 
+                  <param name='animate_transition' value='yes' />
+                  <param name='display_static_image' value='yes' />
+                  <param name='display_spinner' value='yes' />
+                  <param name='display_overlay' value='yes' />
+                  <param name='display_count' value='yes' />
+                  <param name='language' value='en' />
+                  <param name='filter' value='publish=yes' />
+                  <param name='origin' value='viz_share_link' />
+                </object>
+              </div>                
+              <script type='text/javascript'>                    
+                var divElement = document.getElementById('viz1609199944061');                    
+                var vizElement = divElement.getElementsByTagName('object')[0];                    
+                vizElement.style.width='100%';
+                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+                var scriptElement = document.createElement('script');                    
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+              </script>
             </div>
         </div>
         
         <div class="row">
-            <div data-aos="fade-up" data-aos-duration="3000" class="col-8 mt-5 main-art" id="header-main-art">
+            <div data-aos="fade-up" data-aos-duration="3000" class="col-8 mt-5" id="header-main-art">
                 <h4 class="animate__animated animate__rotateIn">Seperti Apa Gejala COVID-19 ?</h4>
             </div>
         </div>
         <div class="row row-kedua" >
           <div data-aos="fade-left" data-aos-duration="3000" class="col mt-5 gejala-left">
-            <h4>Gejala Umum</h4>
-            <ul>
-              <li>1. Demam</li>
-              <li>2. Batuk Kering</li>
-              <li>3. Kelelahan</li>
-            </ul>
+            <h4 class="">
+              <span class="text-wrapper">
+                <span class="letters">Gejala Umum</span>
+              </span>
+            </h4>
           </div>
-          <div data-aos="fade-right" data-aos-duration="3000" class="col mt-5 gejala-right">
+        </div>
+        <div class="row">
+          <div data-aos="fade-right" data-aos-duration="3000" class="col mt-1 gejala-right">
             <h4>Gejala Tidak Umum</h4>
             <ul>
               <li>1. Rasa tidak nyaman dan nyeri</li>
@@ -131,26 +177,8 @@
           
 <!-- Compiled and minified JavaScript -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-
-    window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-            document.getElementById("navbar").style.padding = "-10 0 10px 0";
-            document.getElementById("navbar").style.height = "50px";
-            document.getElementById("navbar").style.backgroundColor = "rgba(0,0,0,.8)";
-
-        } else {
-
-            document.getElementById("navbar").style.padding = "0";
-            document.getElementById("navbar").style.height = "";
-            document.getElementById("navbar").style.backgroundColor = "transparent";
-
-        }
-    } 
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="./src/script/script.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
