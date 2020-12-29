@@ -8,7 +8,7 @@ Animation :
  1. Animate On Scroll - https://michalsnik.github.io/aos/
  
 Script :
-1. JavaScript ES6 (not used yet)
+1. JavaScript ES6
 
 TO DO :
 - Sticky Navbar
