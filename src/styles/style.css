@@ -147,12 +147,20 @@ small {
 
 .atas {
   text-align: center;
-  padding: 50px 0 100px 0px;
   font-family: "Yanone Kaffeesatz";
   color: white;
 }
 .bantext {
+  width: auto;
   text-align: center;
   margin-left: 150px;
   color: #2b2b2b;
+}
+.bantext > h2 {
+  font-weight: 500;
+  font-family: "IBM Plex Mono";
+  /* padding-bottom: 20px; */
+}
+.atas-2 {
+  padding-bottom: 250px;
 }
