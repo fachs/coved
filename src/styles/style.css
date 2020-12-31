@@ -164,3 +164,10 @@ small {
 .atas-2 {
   padding-bottom: 250px;
 }
+#gejala-art,
+#hindari-art {
+  opacity: 0.7;
+  width: 890px;
+  height: 500px;
+}
+
